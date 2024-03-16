@@ -1,10 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+
+
+
+<HTML lang="zh-tw">
+<HEAD>
+    <TITLE>等待系統</TITLE>
+    <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails">
+
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#b721ff">
+</HEAD>
+    <!--<script type="text/javascript" src="js/prototype.js"></script>-->
+    <style>
+        html { height:100%; overflow:hidden; }
+        body {
+            height:100%;
+            margin:0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #CAFFFF;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            position:relative;
+            overflow:hidden;
+        }
+        .title {
+            margin:2em 0 0 0;
+            width: min(400px,80%);
+        }
+
+        .wait-img {
+            height:0;
+            flex-grow:1;
+            width:100%;
+            max-width: 500px;
+            background-position: bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            touch-action: manipulation;
+            text-align: center;
+            color:white;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: black;
+            font-weight:900;
+            font-size:60px;
+            font-family: 'Nunito', sans-serif;
+            word-wrap: break-word;
+        }
+        @media(min-width:1000px) {
+            .title {
+                width: min(400px,80%);
+            }
+            .wait-img {
+                font-size: 40px;
+                -webkit-text-stroke-width: 1.5px;
+            }
+        }
+    </style>
+<BODY>
+    <img class="title" src="img/logo.png" alt="logo">
+    <h1>等待掛號中請稍等</h1>
+    <img class="wait-img" src="img/hospital.png" alt="hospital">
+    <h1>點選查看<br><a href="https://reurl.cc/eLKkyx" target="_blank">看診進度</a>.</h1>
+
+
+</BODY>
+</HTML>
